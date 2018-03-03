@@ -27,14 +27,14 @@ $(document).ready(function(){
     var questionSeven = ["Earth", "Neptune", "Saturn", "Jupiter"]
 
     setTimeout(firstSet, 0);
-	setTimeout(secondSet, 5000);
-	setTimeout(thirdSet, 10000);
-	setTimeout(fourthSet, 15000);
-	setTimeout(fifthSet, 20000);
-	setTimeout(sixthSet, 25000);
-	setTimeout(seventhSet, 30000)
-	setTimeout(checkSeventh, 35000);
- 	setTimeout(FINAL, 40000);
+	setTimeout(secondSet, 10000);
+	setTimeout(thirdSet, 20000);
+	setTimeout(fourthSet, 30000);
+	setTimeout(fifthSet, 40000);
+	setTimeout(sixthSet, 50000);
+	setTimeout(seventhSet, 60000)
+	setTimeout(checkSeventh, 70000);
+ 	setTimeout(FINAL, 75000);
 
 
 	
@@ -50,7 +50,7 @@ $(document).ready(function(){
 
 	//Choice A is Summer Solstice ^
 	function secondSet() {
-		if (document.getElementById("choiceA").checked){
+		if (document.getElementById("choiceA").click){
 			wins++
 		} else {
 			loss++
@@ -65,7 +65,7 @@ $(document).ready(function(){
 
 	//March is choiceA
 	function thirdSet() {
-		if (document.getElementById("choiceA").checked){
+		if (document.getElementById("choiceA").click){
 			wins++
 		} else {
 			loss++
@@ -80,7 +80,7 @@ $(document).ready(function(){
 
 	//Clyde Tombaugh is choiceA
 	function fourthSet() {
-		if (document.getElementById("choiceA").checked){
+		if (document.getElementById("choiceA").click){
 			wins++
 		} else {
 			loss++
@@ -95,7 +95,7 @@ $(document).ready(function(){
 
 	//Titan is choiceA
 	function fifthSet() {
-		if (document.getElementById("choiceA").checked){
+		if (document.getElementById("choiceA").click){
 			wins++
 		} else {
 			loss++
@@ -110,7 +110,7 @@ $(document).ready(function(){
 
 	//69 is choiceB
 	function sixthSet() {
-		if (document.getElementById("choiceB").checked){
+		if (document.getElementById("choiceB").click){
 			wins++
 		} else {
 			loss++
@@ -125,7 +125,7 @@ $(document).ready(function(){
 
 	//Ganymede is choiceC
 	function seventhSet() {
-		if (document.getElementById("choiceC").checked){
+		if (document.getElementById("choiceC").click){
 			wins++
 		} else {
 			loss++
@@ -140,7 +140,7 @@ $(document).ready(function(){
 
 	//Jupiter is choiceD
 	function checkSeventh() {
-		if (document.getElementById("choiceD").checked){
+		if (document.getElementById("choiceD").click){
 			wins++
 		} else {
 			loss++
