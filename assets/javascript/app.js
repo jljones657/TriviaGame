@@ -28,19 +28,19 @@ $(document).ready(function(){
 
     setTimeout(firstSet, 0);
 	setTimeout(secondSet, 5000);
-	setTimeout(thirdSet, 100000);
+	setTimeout(thirdSet, 10000);
 	setTimeout(fourthSet, 15000);
 	setTimeout(fifthSet, 20000);
 	setTimeout(sixthSet, 25000);
 	setTimeout(seventhSet, 30000)
- 	setTimeout(FINAL, 35000);
+	setTimeout(checkSeventh, 35000);
+ 	setTimeout(FINAL, 40000);
 
 
-	//Choice A is Summer Solstice
+	
 	function firstSet() {
 
 		$("#question").html(question[0]);
-		i++;
 		$("#choiceA").html(questionOne[0]);
 		$("#choiceB").html(questionOne[1]);
 		$("#choiceC").html(questionOne[2]);
@@ -48,7 +48,7 @@ $(document).ready(function(){
 	};
 
 
-	//March 13th, 1930 is choiceA
+	//Choice A is Summer Solstice ^
 	function secondSet() {
 		if (document.getElementById("choiceA").checked){
 			wins++
@@ -57,14 +57,13 @@ $(document).ready(function(){
 		};
 
 		$("#question").html(question[1]);
-		i++;
 		$("#choiceA").html(questionTwo[0]);
 		$("#choiceB").html(questionTwo[1]);
 		$("#choiceC").html(questionTwo[2]);
 		$("#choiceD").html(questionTwo[3]);
 	};
 
-	//Clyde Tombaugh is choiceA
+	//March is choiceA
 	function thirdSet() {
 		if (document.getElementById("choiceA").checked){
 			wins++
@@ -73,14 +72,13 @@ $(document).ready(function(){
 		};
 
 		$("#question").html(question[2]);
-		i++;
 		$("#choiceA").html(questionThree[0]);
 		$("#choiceB").html(questionThree[1]);
 		$("#choiceC").html(questionThree[2]);
 		$("#choiceD").html(questionThree[3]);
 	};
 
-	//Titan is choiceA
+	//Clyde Tombaugh is choiceA
 	function fourthSet() {
 		if (document.getElementById("choiceA").checked){
 			wins++
@@ -89,59 +87,65 @@ $(document).ready(function(){
 		};
 
 		$("#question").html(question[3]);
-		i++;
 		$("#choiceA").html(questionFour[0]);
 		$("#choiceB").html(questionFour[1]);
 		$("#choiceC").html(questionFour[2]);
 		$("#choiceD").html(questionFour[3]);
 	};
 
-	//69 is choiceB
+	//Titan is choiceA
 	function fifthSet() {
-		if (document.getElementById("choiceB").checked){
+		if (document.getElementById("choiceA").checked){
 			wins++
 		} else {
 			loss++
 		};
 
 		$("#question").html(question[4]);
-		i++;
 		$("#choiceA").html(questionFive[0]);
 		$("#choiceB").html(questionFive[1]);
 		$("#choiceC").html(questionFive[2]);
 		$("#choiceD").html(questionFive[3]);
 	};
 
-	//Ganymede is choiceC
+	//69 is choiceB
 	function sixthSet() {
-		if (document.getElementById("choiceC").checked){
+		if (document.getElementById("choiceB").checked){
 			wins++
 		} else {
 			loss++
 		};
 
 		$("#question").html(question[5]);
-		i++;
 		$("#choiceA").html(questionSix[0]);
 		$("#choiceB").html(questionSix[1]);
 		$("#choiceC").html(questionSix[2]);
 		$("#choiceD").html(questionSix[3]);
 	};
 
-	//Jupiter is choiceD
+	//Ganymede is choiceC
 	function seventhSet() {
-		if (document.getElementById("choiceD").checked){
+		if (document.getElementById("choiceC").checked){
 			wins++
 		} else {
 			loss++
 		};
 
 		$("#question").html(question[6]);
-		i++;
-		$("#choiceA").html(questionTwo[0]);
-		$("#choiceB").html(questionTwo[1]);
-		$("#choiceC").html(questionTwo[2]);
-		$("#choiceD").html(questionTwo[3]);
+		$("#choiceA").html(questionSeven[0]);
+		$("#choiceB").html(questionSeven[1]);
+		$("#choiceC").html(questionSeven[2]);
+		$("#choiceD").html(questionSeven[3]);
+	};
+
+	//Jupiter is choiceD
+	function checkSeventh() {
+		if (document.getElementById("choiceD").checked){
+			wins++
+		} else {
+			loss++
+	}
+
 	};
 
 	function FINAL() {
@@ -152,6 +156,8 @@ $(document).ready(function(){
 
 	$('button').on('click', function(){
 		console.log(this.id);
+
+		//THis is working, but the code isn't registering my button clicks, so the code is giving back 7 losses every time.
 
 	})
 })
