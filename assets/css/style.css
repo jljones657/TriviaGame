@@ -1,11 +1,25 @@
+body {
+    background-image: url("../images/space.jpg");
+    color:white;
+    background-size: 100%;
+}
+
 h1 {
     text-align:center;
+    color:white;
 }
 
 .body {
     text-align:center;
+    color:white;
 }
 
 .body2 {
     text-align: center;
+    color:white;
+}
+
+.FINAL {
+    text-align: center;
+    color:white;
 }

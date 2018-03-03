@@ -157,7 +157,7 @@ $(document).ready(function(){
 	$('button').on('click', function(){
 		console.log(this.id);
 
-		//THis is working, but the code isn't registering my button clicks, so the code is giving back 7 losses every time.
+		//The .click function doesn't seem to be working, as the game is registering everything as a win, and I don't know why
 
 	})
 })
